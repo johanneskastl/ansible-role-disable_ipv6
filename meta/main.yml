@@ -1,0 +1,36 @@
+galaxy_info:
+  role_name: 'disable_ipv6'
+  author: 'Johannes Kastl'
+  description: 'Disable IPv6 completely'
+  company: 'B1 Systems GmbH'
+
+  license: 'BSD-3-Clause'
+
+  min_ansible_version: 2.4
+
+  platforms:
+  - name: EL
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+  - name: Fedora
+    versions:
+    - all
+  - name: opensuse
+    versions:
+    - all
+  - name: Rocky
+    versions:
+    - all
+  - name: SLES
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+
+  galaxy_tags: []
+
+dependencies: []
