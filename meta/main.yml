@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: 'disable_ipv6'
+  namespace: 'johanneskastl'
   author: 'Johannes Kastl'
   description: 'Disable IPv6 completely'
   company: 'B1 Systems GmbH'
