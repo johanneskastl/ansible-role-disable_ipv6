@@ -12,5 +12,5 @@
     - 'Reboot'
     - 'Wait for the machine(s) to be ready again'
 
-# flush handlers to trigger reboot now
-- meta: flush_handlers
+- name: 'flush handlers to trigger reboot now'
+  meta: flush_handlers
