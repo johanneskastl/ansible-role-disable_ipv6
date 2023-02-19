@@ -1,7 +1,7 @@
 ---
 # disable_ipv6/tasks/main.yml
 
-- name: 'create file /etc/sysctl.d/40_disable_ipv6.conf'
+- name: 'Create file /etc/sysctl.d/40_disable_ipv6.conf'
   template:
     src: '40_disable_ipv6.conf.j2'
     dest: '/etc/sysctl.d/40_disable_ipv6.conf'
@@ -12,5 +12,5 @@
     - 'Reboot'
     - 'Wait for the machine(s) to be ready again'
 
-- name: 'flush handlers to trigger reboot now'
+- name: 'Flush handlers to trigger reboot now'
   meta: flush_handlers
