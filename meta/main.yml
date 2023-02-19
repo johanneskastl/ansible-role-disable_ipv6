@@ -10,6 +10,7 @@ galaxy_info:
   min_ansible_version: '2.12'
 
   platforms:
+    # EL includes RHEL, CentOS, RockyLinux, AlmaLinux etc.
     - name: EL
       versions:
         - all
@@ -20,9 +21,6 @@ galaxy_info:
       versions:
         - all
     - name: opensuse
-      versions:
-        - all
-    - name: Rocky
       versions:
         - all
     - name: SLES
