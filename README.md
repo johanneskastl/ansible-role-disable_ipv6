@@ -25,7 +25,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-        - { role: 'johanneskastl.disable_ipv6' }
+        - role: 'johanneskastl.disable_ipv6'
 
 License
 -------
