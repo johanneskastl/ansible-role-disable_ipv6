@@ -11,6 +11,8 @@
   notify:
     - Reboot
     - Wait for the machine(s) to be ready again
+  when:
+    - not ansible_os_family == "FreeBSD"
 
 - name: Flush handlers to trigger reboot now
   ansible.builtin.meta: flush_handlers
