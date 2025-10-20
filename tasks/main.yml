@@ -1,16 +1,16 @@
 ---
 # disable_ipv6/tasks/main.yml
 
-- name: 'Create file /etc/sysctl.d/40_disable_ipv6.conf'
+- name: Create file /etc/sysctl.d/40_disable_ipv6.conf
   ansible.builtin.template:
-    src: '40_disable_ipv6.conf.j2'
-    dest: '/etc/sysctl.d/40_disable_ipv6.conf'
-    owner: 'root'
-    group: 'root'
+    src: 40_disable_ipv6.conf.j2
+    dest: /etc/sysctl.d/40_disable_ipv6.conf
+    owner: root
+    group: root
     mode: '0644'
   notify:
-    - 'Reboot'
-    - 'Wait for the machine(s) to be ready again'
+    - Reboot
+    - Wait for the machine(s) to be ready again
 
-- name: 'Flush handlers to trigger reboot now'
+- name: Flush handlers to trigger reboot now
   ansible.builtin.meta: flush_handlers
